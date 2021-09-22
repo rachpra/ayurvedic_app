@@ -1,0 +1,3 @@
+include ':ailawaros'
+include ':app'
+rootProject.name = "LiquorDeliveryApplication"

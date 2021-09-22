@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        />
+     <TextView
+        style="@style/textview"
+        android:text="Top Picks"
+        />
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/picksRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+   />
+        <TextView
+         style="@style/textview"
+         android:text="Recommended"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendedRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+        style="@style/textview"
+        android:text="Featured Whisky"
+       />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/whiskyRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        style="@style/textview"
+        android:text="Featured Vodka" />
+    <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/vodkaRV"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="10dp"
+        />
+        <TextView
+            style="@style/textview"
+            android:text="Featured Wine" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wineRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

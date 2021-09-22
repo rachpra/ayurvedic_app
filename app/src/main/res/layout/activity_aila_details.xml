@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".AilaDetailsActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+<!--            app:title="Aila"-->
+<!--            app:titleTextColor="@color/black">-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="10dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgAila"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/neem"
+                    android:layout_height="300dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/ailaName"
+                    android:background="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/imgAila" />
+                <ImageView
+                    android:id="@+id/imgFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_margin="10dp"
+                    app:tint="#B71C1C" />
+                <TextView
+                    android:id="@+id/ailaName"
+                    app:layout_constraintTop_toBottomOf="@id/imgAila"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/ailaType"
+                    app:layout_constraintTop_toBottomOf="@id/ailaName"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/ailaMl"
+                    app:layout_constraintTop_toBottomOf="@id/ailaType"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/ailaPrice"
+                    app:layout_constraintTop_toBottomOf="@id/ailaMl"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ailaDes"
+                    app:layout_constraintTop_toBottomOf="@id/ailaPrice"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/ailaDescrip"
+                    app:layout_constraintTop_toBottomOf="@id/ailaPrice"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+<!--&lt;!&ndash;      <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;          android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;          android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;          android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;          <Button&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:text="180ml"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <Button&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:text="180ml"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <Button&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:text="180ml"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--      </LinearLayout>-->
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="-"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="#0288D1"
+                android:layout_marginLeft="20dp"
+                android:overScrollMode="never"/>
+            <TextView
+                android:id="@+id/ailaQty"
+                android:layout_width="40dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="#01579B"
+                android:textColor="@color/white"
+                android:text="1"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+"
+                android:textSize="20sp"
+                android:backgroundTint="#0288D1"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add to Cart"
+            android:textSize="20sp"
+            android:backgroundTint="#01579B"
+            android:background="@drawable/button_background_blue"
+            android:layout_margin="20dp"
+            android:layout_weight="2"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+ </LinearLayout>
+</ScrollView>
